@@ -74,7 +74,7 @@ public class PmsBrandController {
             logger.info("deleteBrand successfully:id={}", id);
         } else {
             result = CommonResult.failed();
-            logger.info("createBrand failed:id={}", id);
+            logger.info("deleteBrand failed:id={}", id);
         }
 
         return result;
@@ -89,8 +89,10 @@ public class PmsBrandController {
         int count = brandService.updateBrand(id, pmsBrandDTO);
         if (count > 0) {
             result = CommonResult.success(pmsBrandDTO);
+            logger.info("updateBrand successfully:id={},pmsBrandVO={}", id,pmsBrandVO);
         } else {
             result = CommonResult.failed();
+            logger.info("updateBrand failed:id={},pmsBrandVO={}", id,pmsBrandVO);
         }
 
         return result;
