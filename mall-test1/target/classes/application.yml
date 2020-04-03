@@ -19,6 +19,13 @@ spring:
         max-idle: 8 #连接池中的最大空闲数
         min-idle: 0 #连接池中的最小空闲数
     timeout: 3000ms #连接超时时间
+
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
 ##自定义redis key
 redis:
   key:
@@ -27,7 +34,10 @@ redis:
       expire: 120
 
 
-mybatis:
-  mapper-locations:
-    - classpath:mapper/*.xml
-    - classpath*:com/**/mapper/*.xml
+##自定义jwt内容
+jwt:
+  secret: mysecret #密码
+  expireTime: 300  #过期时间5分钟
+
+
+

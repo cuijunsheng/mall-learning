@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea
+mall-test1/target/generated-sources/
+mall-test1/target/classes/com/cjs/mall/common/api/
+mall-test1/target/classes/com/cjs/mall/common/utils/
+mall-test1/target/generated-test-sources/
+mall-test1/target/mall-test1-0.0.1-SNAPSHOT.jar
+mall-test1/target/mall-test1-0.0.1-SNAPSHOT.jar.original
+mall-test1/target/maven-archiver/
+mall-test1/target/maven-status/
+mall-test1/target/surefire-reports/
+mall-test1/target/test-classes/

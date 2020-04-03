@@ -1,6 +1,6 @@
 package com.cjs.mall.service;
 
-import com.cjs.mall.common.CommonResult;
+import com.cjs.mall.common.api.CommonResult;
 
 /**
  * @description:

@@ -1,6 +1,6 @@
 package com.cjs.mall.controller;
 
-import com.cjs.mall.common.CommonResult;
+import com.cjs.mall.common.api.CommonResult;
 import com.cjs.mall.mbg.model.PmsBrand;
 import com.cjs.mall.service.PmsBrandService;
 import io.swagger.annotations.Api;

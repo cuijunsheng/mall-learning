@@ -1,4 +1,4 @@
-package com.cjs.mall.common;
+package com.cjs.mall.common.api;
 
 /**
  * @description:

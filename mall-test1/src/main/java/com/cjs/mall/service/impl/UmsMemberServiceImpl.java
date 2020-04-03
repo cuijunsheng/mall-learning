@@ -1,6 +1,6 @@
 package com.cjs.mall.service.impl;
 
-import com.cjs.mall.common.CommonResult;
+import com.cjs.mall.common.api.CommonResult;
 import com.cjs.mall.service.RedisService;
 import com.cjs.mall.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +31,8 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
         StringBuffer authCode = new StringBuffer();
         Random random = new Random();
-        for (int i = 0; i < 6; i++) {
+        int limit = 6;
+        for (int i = 0; i < limit; i++) {
 
             authCode.append(random.nextInt(10));
         }
@@ -44,7 +45,7 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
     @Override
     public CommonResult verifyAuthCode(String telephone, String authCode) {
-        if(StringUtils.isEmpty(authCode)){
+        if (StringUtils.isEmpty(authCode)) {
 
             return CommonResult.success("请输入验证码");
         }
